@@ -19,13 +19,13 @@
     <title>EBEC Challenge</title>
 </head>
 
-<body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
+<body class="bg-gradient-to-r from-black to-black text-amber-600">
     <!-- Navigation Bar and Side Bar -->
-    <nav>
-        <div class="max-w-7xl p-7 mx-auto my-2 lg:my-7">
-            <div class="flex justify-between items-center">
+    <nav class="fixed w-full mt-0 top-0 z-10 p-2">
+        <div class="max-w-7xl p-0 mx-auto my-2 lg:my-7">
+            <div class="sticky flex justify-between items-center">
                 <div>
-                    <a href="./index.html"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
+                    <a href="#top"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
                 </div>
 
                 <div class="hover:scale-105 transition-transform">
@@ -36,109 +36,58 @@
         </div>
     </nav>
     <main>
-        <section id="banner">
-            <div class="max-w-7xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-12 mt-0">
-                <div class="grid lg:grid-cols-2 grid-cols-1">
-                    <!-- Col 1 -->
-                    <div class=" mx-auto my-auto lg:text-left text-center">
-                        <h1 class="md:text-4xl text-3xl font-bold uppercase">
-                            Um ganda titulo
-                        </h1>
-                        <h2 class="md:text-2xl text-xl font-medium">
-                            Um subtitulo ainda maior
-                        </h2>
-                    </div>
-                    <!-- col 2 -->
-                    <div class="mx-auto lg:my-auto my-11">
-                        <img src="./images/change.png" alt="Best motivational weekend"
-                            class="object-cover h-60 border-4 rounded-xl" />
-                    </div>
-                </div>
-            </div>
-            <!-- Divider Top -->
-            <div class="svg-border">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
-            </div>
-        </section>
-        <section id="sponsors" class="bg-white">
-            <div class="max-w-5xl mx-auto bg-white px-7 py-2">
-                <div
-                    class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
-                    <img class="w-40" src="./images/logos/ist.png" alt="ist" />
-                    <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
-                    <img class="w-44" src="./images/logos/santander.png" alt="santander" />
-                    <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
-                </div>
-            </div>
-        </section>
-        <section id="about-us">
-            <!-- Divider Bottom -->
-            <div class="svg-border" style="transform: rotate(180deg)">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
-            </div>
-            <div class="max-w-6xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
-                <div class="grid lg:grid-cols-10 grid-cols-1">
-                    <div class="col-span-5 mx-auto lg:my-auto">
+        <section id="Banner">
+            <div class="max-w-6xl max-h-screen mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
+                <div class="grid lg:grid-cols-1 grid-cols-1">
+                    <div class="col-span-1 row-start-2 mx-auto lg:my-auto py-16 pt-40">
                         <img src="./images/change.png" alt="Best motivational weekend" class="max-h-40 my-3" />
                     </div>
-                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                    <div class="col-span-1 row-start-4 mx-auto lg:my-auto lg:text-left text-center">
                         <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                            A little about us...
+                            <a href="#EBEC">Plug In</a>
                         </h2>
-                        <p class="text-lg max-w-2xl mx-10">
-                            BEST Lisboa is one of the 90 BEST Local groups
-                            that exist all over Europe. We are a non
-                            governmental, apolitical organization that has
-                            the mission of Empowering Diversity and
-                            Developing Students. Our 5 values: flexibility,
-                            friendship, fun, progress and learning are the
-                            principles that guide our members also known as
-                            BESTies.
-                        </p>
-                    </div>
-                </div>
-                <div class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28">
-                    <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
-                        <img src="./images/logos/three_logos.png" alt="best events" class="max-h-40 my-3" />
-                    </div>
-                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
-                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                            Our events
-                        </h2>
-                        <p class="text-lg max-w-2xl mx-10">
-                            BEST organises a set of events that mainly focus
-                            on providing unique experiences to technology
-                            students and on complementing their education in
-                            the perspective that these experiences would
-                            help them in their future career path.
-                            Furthermore, BEST events also have a very strong
-                            international component that cultivates a spirit
-                            of integration and diversity.
-                        </p>
-                    </div>
-                    <div class="col-span-5 mx-auto lg:my-auto hidden lg:block">
-                        <img src="./images/logos/three_logos.png" alt="Best motivational weekend" class="" />
                     </div>
                 </div>
             </div>
-            <!-- Divider Top -->
-            <div class="svg-border">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
+        </section>
+        <section id="EBEC">
+            <div class="max-w-7x1 max-h-screen mx-auto mb-24 lg:p-14 py-3 px-7 lg:mt-6 mt-0">
+                <div class="grow grid-flow-dense px-32 grid grid-cols-4 grid-rows-5 gap-2">  
+                    <!-- Spacer - first row empty after the logo -->
+                    <div class="col-span-3 row-span-1"></div>
+                    <!-- EBEC icon -->
+                    <div class="flex-none col-span-1 row-span-3 mx-auto lg:my-auto mb-11 px-3 py-3">
+                        <img src="./images/change.png" alt="EBEC challenge"
+                            class="object-cover h-32 border-4 rounded-xl" />
+                    </div>
+                    <!-- EBEC text -->  
+                    <div class="col-span-3 row-span-1 pr-24 pl-16 lg:text-left text-center">
+                        <h1 class="md:text-4xl text-3xl font-bold uppercase">
+                            What is EBEC challenge?
+                        </h1>
+                    </div>
+
+                    <div class="col-span-3 row-span-1 pr-24 pl-16 lg:text-left text-center">
+                        <h4 class="md:text-xl text-xl font-medium py-6">
+                            EBEC (European BEST Engineering Competition) Challenge is one of the biggest engineering competitions in Europe organized by BEST Lisbon.
+                        </h4>
+
+                    </div>
+                    <div class="col-span-3 row-span-1 pr-24 pl-16 lg:text-left text-center">
+                        In 24 hours, the teams have to solve a challenge proposed from one of 2 categories: 
+                        the 
+                        <a href="#Case Study" class="text-amber-700 font-bold brightness-150 hover:brightness-200">Case Study</a> 
+                        and the 
+                        <a href="#Innovative Design" class="text-amber-700 font-bold brightness-150 hover:brightness-200">Innovative Design</a>. 
+                        The winning team of each categorie will get 100€ as a prize and the opportunity 
+                        to compete in the Iberian round in Madrid (everything paid by us!)
+                        This year's edition will take place in Instituto Superior Técnico, 
+                        Alameda Campus, Civil Building!    
+                    </div>
+                    <div class="col-span-3 row-span-1 pr-24 pl-16 lg:text-left text-center">
+                        Click to know <a href="#WHO" class="text-amber-700 font-bold brightness-150 hover:brightness-200">Who</a> can attend, and <a href="#WHEN" class="text-amber-700 font-bold brightness-150 hover:brightness-200">When</a> EBEC is taking place.
+                    </div>
+                </div>
             </div>
         </section>
         <section id="social-media" class="bg-white">
@@ -165,26 +114,105 @@
                 </div>
             </div>
         </section>
-        <section id="our-moments">
-            <!-- Divider Bottom -->
-            <div class="svg-border" style="transform: rotate(180deg)">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
+        <section id="Case Study">
+            <div class="max-w-6xl h-screen mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
+                <div class="grid lg:grid-cols-10 grid-cols-1">
+                    <div class="col-span-5 mx-auto lg:my-auto">
+                        <img src="./images/change.png" alt="Best motivational weekend" class="max-h-40 my-3" />
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            Case Study text
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-10">
+                            Enjoy finding theoretical solutions to real life engineering problems? The CASE STUDY category is made for YOU!
+In 24 hours, the teams have to come up with a possible strategy to solve the technological problem proposed by our sponsors. 
+Don’t worry if you feel like you don’t have the necessary expertise, the problems are supposed to be solved with existing technology and you’ll have numerous research tools available to you! 
+
+                        </p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28">
+                    <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
+                        <img src="./images/logos/three_logos.png" alt="best events" class="max-h-40 my-3" />
+                    </div>
+                </div>
             </div>
-            <div class="h-40"></div>
         </section>
-        <!-- Divider Top -->
-        <div class="svg-border">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                    class="fill-white"></path>
-            </svg>
-        </div>
+        <section id="sponsors" class="">
+            <div class="max-w-5xl mx-auto px-7 py-2">
+                <div
+                    class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
+                    <img class="w-40" src="./images/logos/ist.png" alt="ist" />
+                    <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                    <img class="w-44" src="./images/logos/santander.png" alt="santander" />
+                    <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
+                </div>
+            </div>
+        </section>
+        <section id="Innovative Design">
+            <div class="max-w-6xl h-screen mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
+                <div class="grid lg:grid-cols-10 grid-cols-1">
+                    <div class="col-span-5 mx-auto lg:my-auto">
+                        <img src="./images/change.png" alt="Best motivational weekend" class="max-h-40 my-3" />
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            Innovative design text
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-10">
+                            Feel like taking a more practical approach to solving our challenges? Try our Innovative Design categorie!
+You’ll have to use your creativity and knowledge to come up with new technologies or improve existing ones in only 24 hours. 
+All the teams will have to prepare a presentation to the jury that must demonstrate the technical, social, environmental, and economic impact of their idea.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28">
+                    <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
+                        <img src="./images/logos/three_logos.png" alt="best events" class="max-h-40 my-3" />
+                    </div>
+                </div>
+            </div>
+            <section id="sponsors innovative design" class="">
+                <div class="max-w-5xl mx-aut px-7 py-2">
+                    <div
+                        class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
+                        <img class="w-40" src="./images/logos/ist.png" alt="ist" />
+                        <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                        <img class="w-44" src="./images/logos/santander.png" alt="santander" />
+                        <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- FAQ Section -->
+        <section id="FAQ">
+            <div class="max-w-6xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
+                <div class="grid grid-cols-3">
+                    <div class="col-span-1 col-start-2 pb-16 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            FAQ
+                        </h2>
+                        </div>
+                    <div id="WHEN" class="col-span-3 mx-auto lg:my-auto lg:text-left text-center pt-4">
+                        <h3 class="text-lg max-w-2xl mx-10">When is the event? </h3>
+                    </div>
+                    <div id="WHENtext" class="w-full col-span-3 mx-auto lg:my-auto text-left py-4">
+                        <p class="text-lg max-w-2xl mx-10">
+                            This year’s edition will happen on the 17th and 18th of December.
+                        </p>
+                    </div>
+                    <div id="WHO" class="col-span-3 mx-auto lg:my-auto lg:text-left text-center pt-4">
+                        <h3 class="text-lg max-w-2xl mx-10"> Who can participate? </h3>
+                     </div>
+                     <div id="WHENtext" class="w-full col-span-3 mx-auto lg:my-auto text-left py-4">
+                        <p class="text-lg max-w-2xl mx-10">
+                            Every student of Tecnico and FCUL is welcome to attend!
+                        </p>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div class="bg-white text-center lg:text-left">
