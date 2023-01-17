@@ -1,14 +1,13 @@
 // Initialising the canvas
 var canvas = document.querySelector('canvas'),
 ctx = canvas.getContext('2d');
-ctx.font = "bn-machine";
 
 // Setting the width and height of the canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 // Setting up the letters
-var letters = 'ABCD FGHIJKLM OPQRSTU XYZABCDEFGHIJK MNOPQ STU VXY   ABCDE FG  IJKLMNOP RSTUVXY  ZABCDEF HIJK LMNOPQRS TUVXYZABCD EF HIJKLM  NOPQRS   TUVXYZABCDEFGHIJ LMNOPQRSTU XYZ';
+var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
 letters = letters.split('');
 
 // Setting up the columns
@@ -25,8 +24,13 @@ for (var i = 0; i < columns; i++) {
 function draw() {
   ctx.fillStyle = 'rgba(0, 0, 0, .1)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
+  var j=0, EBEC=[" ","B","E","S","T"," ","E","B","E","C"," "];
   for (var i = 0; i < drops.length; i++) {
-    var text = letters[Math.floor(Math.random() * letters.length)];
+    if(j>10){
+      j=Math.floor(Math.random() * 8);
+    }
+    var text = EBEC[j];
+    j++;
     ctx.fillStyle = '#0f0';
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
     drops[i]++;
@@ -37,4 +41,4 @@ function draw() {
 }
 
 // Loop the animation
-setInterval(draw, 55);
+setInterval(draw, 100);
