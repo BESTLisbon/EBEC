@@ -1029,6 +1029,10 @@ video {
   font-family: BN Machine, sans-serif;
 }
 
+.font-bnelements {
+  font-family: BN Elements, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
