@@ -45,7 +45,7 @@ myFont.load().then(function(font){
 
   // Loop the animation
   setInterval(draw,45);
-
+  
 
 
 });

@@ -22,10 +22,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>EBEC Challenge</title>
 </head>
-<body class="bg-black text-white">
+<body class="bg-white text-white">
     <!-- THIS IS MY MESS, AVERT THY GAZE -->
     <!-- <canvas class="w-screen h-screen fixed z-1 mx-0 my-0 py-0"></canvas> -->
-    <!-- bg-gradient-to-r from-black to-black -->
+    <!-- bg-gradient-to-r from-black to-black --> 
     
     <!-- Navigation Bar and Side Bar -->
     <canvas class="w-full opacity-30 fixed -z-1 mx-0 my-0 py-0"></canvas>
@@ -43,52 +43,46 @@
             </div>
         </div>
     </nav>
+    <!-- Simple container layout: 
+        each section has a minimum screen height (no two sections on screen unless you scroll!), 
+        and it's wrapper is at most a large screen size -->
     <main class="absolute z-10 font-bnmachine">   
-        <section id="Banner" class="h-screen">
-            <div class="max-w-6xl h-screen mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0 z-10">
-                <div class="grid lg:grid-cols-1 grid-cols-1">
-                    <div class="col-span-1 row-start-2 mx-auto lg:my-auto py-16 pt-20">
-                        <a href="#EBEC"><img src="./images/EBEC_Logo_Principal.png" alt="EBEC beautiful logo by Kika" class="max-h-80 my-3" /></a>
-                    </div>
-                    
-                    <div class="col-span-1 row-start-4 mx-auto lg:my-auto lg:text-left text-center">
-                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10 brightness-150 hover:brightness-200 animate-pulse">
-                            <a href="#EBEC">Plug In</a>
-                        </h2>
-                    </div>
-                </div>
+        <section id="Banner" class="hero min-h-screen mx-auto lg:mb-48">
+            <!-- why mt-x and not pt-x on the Wrapper? margin will mess outer container-->
+            <div id="Banner Wrapper" class="mx-auto max-w-screen-lg lg:pt-72">
+                <a href="#EBEC"><img src="./images/EBEC_Logo_Principal.png" alt="EBEC beautiful logo by Kika" class="max-h-80 mx-auto" />
+                <h3 class="flex justify-center font-black brightness-150  mx-auto lg:py-8">Plug in</h3></a>
             </div>
         </section>
-        <section >
-            <div id="EBEC" class="max-w-3x1 min-h-screen lg:mx-16 mb-6 lg:p-14 lg:pt-0 py-3 lg:mt-6 mt-0 z-10">
-                <div class="grid grid-rows-2 mx-32 px-14 my-28 py-8 bg-black/75 rounded-3xl">  
-                    <!-- EBEC icon -->
-                    <div class="flex-auto place-items-center mx-auto my-auto">
-                        <img src="./images/EBEC_Logo.svg" alt="EBEC challenge" class="w-64"/>
+        <section id="EBEC" class="flex items-center min-h-screen mx-auto lg:mb-48">
+            <div id="EBEC Wrapper" class=" grid grid-rows-2 bg-black/75 mx-72 rounded-3xl">
+                <!-- EBEC icon -->
+                <div class="flex-auto place-items-center mx-auto my-auto p-16">
+                    <img src="./images/EBEC_Logo.svg" alt="EBEC challenge" class="w-64"/>
+                </div>
+                <div class="grid-flow-dense grid-rows-4 px-24 pb-16">
+                    <div class="font-medium row-span-1 pt-8 px-12 text-center">
+                        
+                        EBEC (European BEST Engineering Competition) Challenge is one of 
+                        the biggest engineering competitions in Europe organized by BEST Lisbon.
+                        
                     </div>
-                    <div class="grid-flow-dense grid-rows-4 px-8 pb-12">
-                        <div class="font-medium row-span-1 pt-8 px-12 text-center">
-                            
-                            EBEC (European BEST Engineering Competition) Challenge is one of 
-                            the biggest engineering competitions in Europe organized by BEST Lisbon.
-                            
-                        </div>
-                        <div class="font-medium row-span-1 py-6 px-12 text-center">
-                            In 24 hours, the teams have to solve a challenge proposed from one of 2 categories: 
-                            the 
-                            <a href="#Case Study" class="text-green-700 hover:brightness-200 font-bold brightness-150">Case Study</a> 
-                            and the 
-                            <a href="#Innovative Design" class="text-green-700 hover:brightness-200 font-bold brightness-150">Innovative Design</a>. 
-                            The winning team of each categorie will get 100€ as a prize and the opportunity 
-                            to compete in the Iberian round in Madrid (everything paid by us!)   
-                        </div>
-                        <div class="font-medium row-span-1 px-12 text-center">
-                            Click to know 
-                            <a href="#WHEN" class="text-green-700 hover:brightness-200 font-bold brightness-150">When</a> EBEC is taking place,  
-                            <a href="#WHERE" class="text-green-700 hover:brightness-200 font-bold brightness-150">Where</a> the event is taking place, and
-                            <a href="#WHO" class="text-green-700 hover:brightness-200 font-bold brightness-150">Who</a> can attend. 
-                        </div>
+                    <div class="font-medium row-span-1 py-6 px-12 text-center">
+                        In 24 hours, the teams have to solve a challenge proposed from one of 2 categories: 
+                        the 
+                        <a href="#Case Study" class="text-green-700 hover:brightness-200 font-bold brightness-150">Case Study</a> 
+                        and the 
+                        <a href="#Innovative Design" class="text-green-700 hover:brightness-200 font-bold brightness-150">Innovative Design</a>. 
+                        The winning team of each categorie will get 100€ as a prize and the opportunity 
+                        to compete in the Iberian round in Madrid (everything paid by us!)   
                     </div>
+                    <div class="font-medium row-span-1 px-12 text-center">
+                        Click to know 
+                        <a href="#WHEN" class="text-green-700 hover:brightness-200 font-bold brightness-150">When</a> EBEC is taking place,  
+                        <a href="#WHERE" class="text-green-700 hover:brightness-200 font-bold brightness-150">Where</a> the event is taking place, and
+                        <a href="#WHO" class="text-green-700 hover:brightness-200 font-bold brightness-150">Who</a> can attend. 
+                    </div>
+                
                 </div>
             </div>
         </section>
