@@ -14,32 +14,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link href="https://fonts.adobe.com/fonts/jaf-mashine" rel="html">
     <link href="https://www.dafont.com/bn-machine.font" rel="html">
-    <link href="https://www.dafont.com/bn-elements.font" rel="html">
                 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>EBEC Challenge</title>
 </head>
-<body class="bg-white text-white">
-    <!-- THIS IS MY MESS, AVERT THY GAZE -->
-    <!-- <canvas class="w-screen h-screen fixed z-1 mx-0 my-0 py-0"></canvas> -->
-    <!-- bg-gradient-to-r from-black to-black --> 
-    
+<body id="body" class="bg-black text-white">
     <!-- Navigation Bar and Side Bar -->
     <canvas class="w-full opacity-30 fixed -z-1 mx-0 my-0 py-0"></canvas>
-    <nav class="fixed w-full z-20">
-        <div class="max-w-7xl p-0 mx-auto my-2 lg:my-7">
-            <div class="sticky flex justify-between items-center">
-                <div class="bg-black/80 rounded-2xl p-2">
-                    <a href="#EBEC"><img class="w-36" src="./images/logos/EBEC_Challenge_Local.png" alt="" /></a>
-                </div>
+    <nav class="fixed w-full max-w-screen mx-auto lg:p-12 z-20">
+        <div class="sticky flex justify-between items-center">
+            <div class="bg-black/80 rounded-2xl p-2">
+                <a href="#EBEC"><img class="w-36" src="./images/logos/EBEC_Challenge_Local.png" alt="" /></a>
+            </div>
 
-                <div class="bg-black/80 rounded-2xl p-2">
-                    <a href="https://best.tecnico.ulisboa.pt/" target="_blank"><img class="w-36 s:w-18" src="./images/logos/best_lisbon.png" alt="" /></a>
-                </div>
-
+            <div class="bg-black/80 rounded-2xl p-2">
+                <a href="https://best.tecnico.ulisboa.pt/" target="_blank"><img class="w-36 s:w-18" src="./images/logos/best_lisbon.png" alt="" /></a>
             </div>
         </div>
     </nav>
@@ -54,13 +45,13 @@
                 <h3 class="flex justify-center font-black brightness-150  mx-auto lg:py-8">Plug in</h3></a>
             </div>
         </section>
-        <section id="EBEC" class="flex items-center min-h-screen mx-auto lg:mb-48">
-            <div id="EBEC Wrapper" class=" grid grid-rows-2 bg-black/75 mx-72 rounded-3xl">
+        <section id="EBEC" class="flex-col items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
+            <div id="EBEC Wrapper" class=" grid grid-rows-2 mx-72 bg-black/75 rounded-3xl">
                 <!-- EBEC icon -->
                 <div class="flex-auto place-items-center mx-auto my-auto p-16">
                     <img src="./images/EBEC_Logo.svg" alt="EBEC challenge" class="w-64"/>
                 </div>
-                <div class="grid-flow-dense grid-rows-4 px-24 pb-16">
+                <div class="grid-flow-dense grid-rows-4 px-36 pb-16 text-xl">
                     <div class="font-medium row-span-1 pt-8 px-12 text-center">
                         
                         EBEC (European BEST Engineering Competition) Challenge is one of 
@@ -73,7 +64,7 @@
                         <a href="#Case Study" class="text-green-700 hover:brightness-200 font-bold brightness-150">Case Study</a> 
                         and the 
                         <a href="#Innovative Design" class="text-green-700 hover:brightness-200 font-bold brightness-150">Innovative Design</a>. 
-                        The winning team of each categorie will get 100€ as a prize and the opportunity 
+                        The winning team of each category will get 100€ as a prize and the opportunity 
                         to compete in the Iberian round in Madrid (everything paid by us!)   
                     </div>
                     <div class="font-medium row-span-1 px-12 text-center">
@@ -85,64 +76,55 @@
                 
                 </div>
             </div>
-        </section>
-        <section id="social-media" class="">
-            <div
-                class="max-w-5xl mx-auto grid lg:grid-cols-2 grid-cols-1 items-center content-evenly justify-items-center">
-                <div class="my-4">
-                    <h2 class="text-green-500 text-2xl font-semibold">
-                        Follow us in our social media:
-                    </h2>
-                </div>
-                <div class="my-4 grid grid-cols-3 items-center">
-                    <a href="https://www.facebook.com/bestlisboa">
-                        <img src="./images/logos/facebook.png" alt="facebook"
-                            class="w-32 hover:scale-105 transition-transform" />
-                    </a>
-                    <a href="https://www.instagram.com/best.lisbon/">
-                        <img src="./images/logos/instagram.png" alt="instagram"
-                            class="w-32 hover:scale-105 transition-transform" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/best-lisboa/mycompany/">
-                        <img src="./images/logos/linkedin.png" alt="linkdin"
-                            class="w-32 hover:scale-105 transition-transform" />
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="Case Study">
-            <div class="max-w-6xl min-h-screen place-items-center mx-auto lg:p-7 py-6 px-7 lg:mt-10 mt-0">
-                <div class="grid mx-14 px-14 my-24 py-8 lg:grid-cols-2 grid-cols-1 bg-black/75 rounded-3xl">
-                    <div class="col-span-1 mx-auto lg:my-auto">
-                        <img src="./images/photos/case_study_photo" alt="Last year's Case Study photo" class="max-h-40 my-3" /> 
+            <section id="social-media" class="">
+                <div
+                    class="max-w-5xl mx-auto grid lg:grid-cols-2 grid-cols-1 items-center content-evenly justify-items-center">
+                    <div class="my-4">
+                        <h2 class="text-green-500 text-2xl font-semibold">
+                            Follow us in our social media:
+                        </h2>
                     </div>
-                    <div class="col-span-1 mx-auto lg:my-auto lg:text-left text-center">
-                        <div class="grid-rows-2">
-                            <div class="row-span-1 my-10">
-                                <img src="./images/EBEC_CS.png" alt="Case Study Logo">
-                            </div>
-                            <div class="row-span-1 mt-10">
-                                <p class="font-medium text-lg text-justify mt-5">
-                                    Enjoy finding theoretical solutions to real life engineering problems? The <span class="font-bold brightness-125">CASE STUDY</span> category is made for <span class="font-bold brightness-125">YOU</span>!
-                                </p>
-                                <p class="font-medium text-lg text-justify mt-5">
-                                    In 24 hours, the teams have to come up with a possible strategy to solve the technological problem proposed by our sponsors. 
-                                    Don’t worry if you feel like you don’t have the necessary expertise, the problems are supposed to be solved with existing technology and you’ll have numerous research tools available to you! 
+                    <div class="my-4 grid grid-cols-3 items-center">
+                        <a href="https://www.facebook.com/bestlisboa">
+                            <img src="./images/logos/facebook.png" alt="facebook"
+                                class="w-32 hover:scale-105 transition-transform" />
+                        </a>
+                        <a href="https://www.instagram.com/best.lisbon/">
+                            <img src="./images/logos/instagram.png" alt="instagram"
+                                class="w-32 hover:scale-105 transition-transform" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/best-lisboa/mycompany/">
+                            <img src="./images/logos/linkedin.png" alt="linkdin"
+                                class="w-32 hover:scale-105 transition-transform" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section id="Case Study" class="flex-col items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
+            <div id="CS Wrapper" class="grid lg:grid-cols-2 grid-cols-1 mx-72 bg-black/75 rounded-3xl">
+                <div class="col-span-1 mx-auto lg:my-auto">
+                    <img src="./images/photos/case_study_photo" alt="Last year's Case Study photo" class="max-h-32 p-6" /> 
+                </div>
+                <div class="col-span-1 lg:py-24 lg:px-32">
+                    <div class="row-span-1 ">
+                        <img src="./images/EBEC_CS.png" alt="Case Study Logo">
+                    </div>
+                    <div class="row-span-1 pt-10">
+                        <p class="font-medium text-lg text-justify pt-5">
+                            Enjoy finding theoretical solutions to real life engineering problems? The <span class="font-bold brightness-125">CASE STUDY</span> category is made for <span class="font-bold brightness-125">YOU</span>!
+                        </p>
+                        <p class="font-medium text-lg text-justify pt-5">
+                            In 24 hours, the teams have to come up with a possible strategy to solve the technological problem proposed by our sponsors. 
+                            Don’t worry if you feel like you don’t have the necessary expertise, the problems are supposed to be solved with existing technology and you’ll have numerous research tools available to you! 
 
-                                </p>
-                            </div>
-                        </div>
+                        </p>
                     </div>
-                </div>
-                <div class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28">
-                    <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
-                        <img src="./images/logos/three_logos.png" alt="best events" class="max-h-40 my-3" />
-                    </div>
+
                 </div>
             </div>
-        </section>
-        <section id="sponsorsCS" class="">
-            <div class="max-w-5xl mx-auto px-7 py-2">
+            <section id="sponsorsCS" class="mx-96">
                 <div
                     class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
                     <img class="w-40" src="./images/logos/ist.png" alt="ist" />
@@ -150,54 +132,49 @@
                     <img class="w-44" src="./images/logos/santander.png" alt="santander" />
                     <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
                 </div>
-            </div>
+            </section>
         </section>
-        <section id="Innovative Design">
-            <div class="max-w-6xl min-h-screen place-items-center mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
-                <div class="grid mx-14 px-14 my-24 py-8 lg:grid-cols-2 grid-cols-1 bg-black/75 rounded-3xl">
-                    <div class="col-span-1 mx-auto lg:my-auto lg:text-left text-center">
-                        <div class="grid-rows-2">
-                            <div class="row-span-1 my-10">
-                                <img src="./images/EBEC_ID.png" alt="Innovative Design Logo">
-                            </div>
-                            <div class="row-span-1 mt-10">
-                                <p class="font-medium text-lg text-justify mt-5">
-                                    Feel like taking a more practical approach to solving our challenges? Try our <span class="font-bold brightness-125">Innovative Design</span> category!
-                                </p>
-                                <p class="font-medium text-lg text-justify mt-5">
-                                    You’ll have to use your creativity and knowledge to come up with new technologies or improve existing ones in only 24 hours. 
-                                    All the teams will have to prepare a presentation to the jury that must demonstrate the technical, social, environmental, and economic impact of their idea.                                    
-                                </p>
-                            </div>
-                        </div>
+        
+        
+
+        <section id="Innovative Design" class="flex-col items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
+            <div id="ID Wrapper" class="grid lg:grid-cols-2 grid-cols-1 mx-72 bg-black/75 rounded-3xl">
+                <div class="col-span-1 lg:py-24 lg:px-32">
+                    <div class="row-span-1 grid-rows-2">
+                        <img src="./images/EBEC_ID.png" alt="Innovative Design Logo">
                     </div>
-                    <div class="col-span-1 mx-auto lg:my-auto">
-                        <img src="./images/photos/innovative_design_photo" alt="Last year's Innovative Design photo" class="max-h-40 my-3" />
+                    <div class="row-span-1 mt-10">
+                        <p class="font-medium text-lg text-justify mt-5">
+                            Feel like taking a more practical approach to solving our challenges? Try our <span class="font-bold brightness-125">Innovative Design</span> category!
+                        </p>
+                        <p class="font-medium text-lg text-justify mt-5">
+                            You’ll have to use your creativity and knowledge to come up with new technologies or improve existing ones in only 24 hours. 
+                            All the teams will have to prepare a presentation to the jury that must demonstrate the technical, social, environmental, and economic impact of their idea.                                    
+                        </p>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28">
-                    <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
-                        <img src="./images/logos/three_logos.png" alt="best events" class="max-h-40 my-3" />
-                    </div>
+                <div class="col-span-1 mx-auto lg:my-auto">
+                    <img src="./images/photos/innovative_design_photo" alt="Last year's Innovative Design photo" class="max-h-40 my-3" />
                 </div>
             </div>
-            <section id="sponsorsID" class="">
-                <div class="max-w-5xl mx-auto px-7 py-2">
-                    <div
-                        class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
-                        <img class="w-40" src="./images/logos/ist.png" alt="ist" />
-                        <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
-                        <img class="w-44" src="./images/logos/santander.png" alt="santander" />
-                        <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
-                    </div>
+            <section id="sponsorsID" class="mx-96">
+                <div class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
+                    <img class="w-40" src="./images/logos/ist.png" alt="ist" />
+                    <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                    <img class="w-44" src="./images/logos/santander.png" alt="santander" />
+                    <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
                 </div>
             </section>
+        </section>
+
+        
+
         </section>
         <!-- FAQ Section -->
         <section id="FAQ">
             <div class="max-w-5xl min-h-screen my-auto mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
                 <div class="grid grid-cols-3 mx-14 px-14 my-12 py-8 bg-black/75 rounded-3xl">
-                    <div class="col-span-1 col-start-2 pb-16 mx-auto lg:my-auto text-center text-bold brightness-200">
+                    <div class="col-span-1 col-start-2 pb-16 mx-auto lg:my-auto text-center text-bold brightness-200 ">
                         <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
                             FAQ
                         </h2>
@@ -229,62 +206,76 @@
                     </div>
                 </div>
             </div>
+        </section>
+       <!-- <section id="Team" class="flex items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
+            <div id="Team Wrapper" class="mx-72 bg-black/75 rounded-3xl">
+                    <div class="flex-row mx-auto py-4 gap-8 items-center content-evenly justify-items-center">
+                        <img class="w-40" src="./images/logos/ist.png" alt="ist" />
+                        <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                        <img class="w-44" src="./images/logos/santander.png" alt="santander" />
+                        <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
+                    </div>
+            </div> 
+        </section>
+    -->
+        </section>
+            <footer class="w-full z-10">
+                <div class="bg-black text-center lg:text-left">
+                    <div class="container px-20 text-gray-300 mx-auto p-6 ">
+                        <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+                            <div class="my-6 md:mb-0">
+                                <div class="text-center md:text-left">
+                                    <h3 class="text-xl font-semibold my-4">
+                                        Contact us
+                                    </h3>
+                                    <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                        </svg>
+                                        <p>lisbon@best-eu.org</p>
+                                    </a>
+                                    <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <p>
+                                            Avenida Rovisco Pais
+                                        </p>
+                                    </a>
+                                </div>
+                            </div><!--
+                            <div class="hidden lg:block my-6 md:mb-0">
+                                <div class="">
+                                    <div class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
+                                        <a href="https://best.tecnico.ulisboa.pt/ebec2022/" class="flex-none">
+                                            <img src="./images/logos/ebec.png" alt="ebec lisbon"
+                                                class="w-24 hover:scale-105 transition-transform" />
+                                        </a>
+                                        <a href="https://www.instagram.com/best.lisbon/" class="flex-none">
+                                            <img src="./images/logos/courses.png" alt="best courses"
+                                                class="w-28 hover:scale-105 transition-transform" />
+                                        </a>
+                                        <a href="https://best.tecnico.ulisboa.pt/courses/" class="flex-none">
+                                            <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
+                                                class="w-16 hover:scale-105 transition-transform" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="mx-auto text-gray-300">
+                            <p class="text-center">© 2023 BEST Lisboa. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer> 
     </main>
-    <!-- <footer class="fixed bottom-0 w-full z-10">
-        <div class="bg-white text-center lg:text-left">
-            <div class="container px-20 text-gray-600 mx-auto p-6 ">
-                <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
-                    <div class="my-6 md:mb-0">
-                        <div class="text-center md:text-left">
-                            <h3 class="text-xl font-semibold my-4">
-                                Contact us
-                            </h3>
-                            <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                </svg>
-                                <p>lisbon@best-eu.org</p>
-                            </a>
-                            <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p>
-                                    Avenida Rovisco Pais
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hidden lg:block my-6 md:mb-0">
-                        <div class="">
-                            <div class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
-                                <a href="https://best.tecnico.ulisboa.pt/ebec2022/" class="flex-none">
-                                    <img src="./images/logos/ebec.png" alt="ebec lisbon"
-                                        class="w-24 hover:scale-105 transition-transform" />
-                                </a>
-                                <a href="https://www.instagram.com/best.lisbon/" class="flex-none">
-                                    <img src="./images/logos/courses.png" alt="best courses"
-                                        class="w-28 hover:scale-105 transition-transform" />
-                                </a>
-                                <a href="https://best.tecnico.ulisboa.pt/courses/" class="flex-none">
-                                    <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
-                                        class="w-16 hover:scale-105 transition-transform" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mx-auto text-gray-500">
-                    <p class="text-center">© 2021 BEST Lisboa. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+    
     <!-- Scripts -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/matrix plus.js"></script>

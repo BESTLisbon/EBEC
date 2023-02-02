@@ -2,6 +2,8 @@
 var canvas = document.querySelector('canvas');
 
 var myFont = new FontFace('matrix', 'url(./fonts/matrix_code_nfi.otf)');
+
+
 myFont.load().then(function(font){
 
   document.fonts.add(font);
