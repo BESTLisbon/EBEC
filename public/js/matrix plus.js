@@ -9,8 +9,10 @@ myFont.load().then(function(font){
   document.fonts.add(font);
   
   // Setting the width and height of the canvas
+
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+
 
   ctx = canvas.getContext('2d');
   ctx.font = '12px matrix';

@@ -21,168 +21,167 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
     <title>EBEC Challenge</title>
 </head>
-<body id="body" class="bg-white text-white dark">
+<body id="body" class="bg-black text-white dark">
     <!-- Navigation Bar and Side Bar -->
-    <canvas class="opacity-30 fixed -z-1 mx-0 my-0 py-0"></canvas>
-    <nav class="fixed w-full mx-auto p-6 overflow-clip z-20">
-        <div class="flex sticky justify-between items-center">
-            <div class="bg-black/80 rounded-2xl p-2">
-                <a href="#EBEC"><img class="lg:w-36 w-24 p-2" src="./images/logos/EBEC_Challenge_Local.png" alt="" /></a>
+    <canvas class="fixed w-full opacity-30 -z-1"></canvas>
+    <nav class="fixed w-full p-2 z-20">
+        <div class="flex justify-between">
+            <div class="w-[17vw] md:w-[12vw] lg:m-8 md:m-4 m-2 bg-black/80 content-center rounded-2xl p-2">
+                <a href="#EBEC"><img class="flex-1 p-2" src="./images/logos/EBEC_Challenge_Local.png" alt="" /></a>
             </div>
 
-            <div class="bg-black/80 rounded-2xl p-2">
-                <a href="https://best.tecnico.ulisboa.pt/" target="_blank"><img class="lg:w-36 w-24 p-2" src="./images/logos/best_lisbon.png" alt="" /></a>
+            <div class="w-[15vw] md:w-[10vw] lg:m-8 md:m-4 m-2 bg-black/80 rounded-2xl p-2">
+                <a href="https://best.tecnico.ulisboa.pt/" target="_blank"><img class="flex-1 p-2" src="./images/logos/best_lisbon.png" alt="" /></a>
             </div>
         </div>
     </nav>
+
     <!-- Simple container layout: 
         each section has a minimum screen height (no two sections on screen unless you scroll!), 
         and it's wrapper is at most a large screen size -->
-    <main class="absolute flex-col items-center z-10 font-bnmachine">   
-        <section id="Banner" class="flex hero w-full items-center min-h-screen mx-auto lg:mb-48 lg:my-78 p-16">
+    <main class="absolute z-10 w-full min-h-screen font-bnmachine">   
+
+        <section id="Banner" class="flex hero w-full h-screen items-center">
             <!-- why mt-x and not pt-x on the Wrapper? margin will mess outer container-->
-            <div id="Banner Wrapper" class="lg:mx-auto object-contain lg:pt-72 p-36">
-                <a href="#EBEC" class="p-8"><img src="./images/EBEC_Logo_Principal.png" alt="EBEC beautiful logo by Kika" class="max-h-80 mx-auto" />
+            <div id="Banner Wrapper" class="mx-auto md:max-w-[40vw] max-w-[50vw] my-[25vh]">
+                <a href="#EBEC" class="p-8"><img src="./images/EBEC_Logo_Principal.png" alt="EBEC beautiful logo by Kika" class="" />
                 <h3 class="flex justify-center font-black brightness-150 mx-auto py-8">Plug in</h3></a>
             </div>
         </section>
-        <section id="EBEC" class="flex-col items-center min-h-screen mx-auto lg:mb-48 lg:pt-24">
-            <div id="EBEC Wrapper" class="grid-flow-dense lg:mx-72 lg:px-8 bg-black/75 rounded-3xl">
+
+        <section id="EBEC" class="flex-col w-full min-h-screen items-center md:p-[4vw] md:pb-0 p-[4vw] pb-0">
+            <div id="EBEC Wrapper" class="grid-flow-dense py-[10vh] bg-black/75 rounded-3xl">
                 <!-- EBEC icon -->
-                <div id="EBECtgt" class="flex-auto object-fill md:py-24 lg:px-36 px-8 mx-auto lg:p-16">
-                    <img src="./images/EBEC_Logo.svg" alt="EBEC challenge" class=""/>
+                <div class="flex-auto items-center">
+                    <img src="./images/EBEC_Logo.svg" alt="EBEC challenge" class="w-[35vw] mx-auto"/>
                 </div>
-                <div class="grid-flow-dense grid-rows-4 md:px-16 md:pb-16 text-xl">
-                    <div class="font-medium row-span-1 pt-8 px-12 text-center">
+                <div class="grid-flow-dense grid-rows-4 text-sm">
+                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[8vh] px-[4vw]">
                         
                         EBEC (European BEST Engineering Competition) Challenge is one of 
                         the biggest engineering competitions in Europe organized by BEST Lisbon.
                         
                     </div>
-                    <div class="font-medium row-span-1 py-6 px-12 text-center">
+                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
                         In 24 hours, the teams have to solve a challenge proposed from one of 2 categories: 
                         the 
                         <a href="#Case Study" class="text-green-700 hover:brightness-200 font-bold brightness-150">Case Study</a> 
                         and the 
                         <a href="#Innovative Design" class="text-green-700 hover:brightness-200 font-bold brightness-150">Innovative Design</a>. 
-                        The winning team of each category will get 100€ as a prize and the opportunity 
+                        The winning team of each category will get a cash prize and the opportunity 
                         to compete in the Iberian round in Madrid (everything paid by us!)   
                     </div>
-                    <div class="font-medium row-span-1 px-12 text-center">
-                        Click to know 
-                        <a href="#WHEN" class="text-green-700 hover:brightness-200 font-bold brightness-150">When</a> EBEC is taking place,  
-                        <a href="#WHERE" class="text-green-700 hover:brightness-200 font-bold brightness-150">Where</a> the event is taking place, and
-                        <a href="#WHO" class="text-green-700 hover:brightness-200 font-bold brightness-150">Who</a> can attend. 
+                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
+                        Click here for answers to all your <p></p><a href="" class="text-green-700 hover:brightness-200 font-bold brightness-150">FAQ</a>tastic<p></p> questions!
                     </div>
                 
                 </div>
             </div>
-            <section id="social-media" class="">
-                <div
-                    class="max-w-5xl mx-auto grid lg:grid-cols-2 grid-cols-1 items-center content-evenly justify-items-center">
-                    <div class="my-4">
-                        <h2 class="text-green-500 text-2xl font-semibold">
-                            Follow us in our social media:
+            <section id="social-media" class="rounded-full bg-gradient-radial from-slate-500/95 to-slate-900/90">
+                <div class="grid grid-cols-2 items-center p-2 pr-0">
+                    <div class="p-2">
+                        <h2 class="text-green-500 text-xs font-semibold">
+                            Follow our social media:
                         </h2>
                     </div>
-                    <div class="my-4 grid grid-cols-3 items-center">
+                    <div class="grid shrink grid-cols-3 max-w-[60vw]">
                         <a href="https://www.facebook.com/bestlisboa">
                             <img src="./images/logos/facebook.png" alt="facebook"
-                                class="w-32 hover:scale-105 transition-transform" />
+                                class="w-[20vw] hover:scale-105 transition-transform" />
                         </a>
                         <a href="https://www.instagram.com/best.lisbon/">
                             <img src="./images/logos/instagram.png" alt="instagram"
-                                class="w-32 hover:scale-105 transition-transform" />
+                                class="w-[20vw] hover:scale-105 transition-transform" />
                         </a>
                         <a href="https://www.linkedin.com/company/best-lisboa/mycompany/">
                             <img src="./images/logos/linkedin.png" alt="linkdin"
-                                class="w-32 hover:scale-105 transition-transform" />
+                                class="w-[20vw] hover:scale-105 transition-transform" />
                         </a>
                     </div>
                 </div>
             </section>
         </section>
-        
-        <section id="Case Study" class="flex-col items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
-            <div id="CS Wrapper" class="grid lg:grid-cols-2 grid-cols-1 mx-72 bg-black/75 rounded-3xl">
-                <div class="col-span-1 mx-auto lg:my-auto">
-                    <img src="./images/photos/case_study_photo" alt="Last year's Case Study photo" class="max-h-32 p-6" /> 
+       
+        <section id="Case Study" class="flex-col w-full min-h-screen items-center md:p-[4vw] md:pb-0 p-[4vw] pb-0">
+            <div id="CS Wrapper" class="grid-flow-dense lg:grid-cols-2 py-[5vh] px-[2vh] bg-black/75 rounded-3xl">
+                <div class="lg:col-span-1">
+                    <div class="row-span-1 flex-auto items-center">
+                        <img src="./images/EBEC_CS.png" alt="Case Study Logo" class="h-[4vh] mx-auto">
+                    </div>
+                    <div class="row-span-1 lg:pt-10">
+                        <div class="grid-flow-dense grid-rows-3 text-sm">
+                            <div class="font-medium row-span-1 text-center lg:text-justify pt-[8vh] px-[4vw]">
+                                Enjoy finding theoretical solutions to real life engineering problems? The <span class="font-bold brightness-125">CASE STUDY</span> category is made for <span class="font-bold brightness-125">YOU</span>!
+                            </div>
+                            <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
+                                In 24 hours, the teams have to come up with a possible strategy to solve the technological problem proposed by our sponsors. 
+                            </div>
+                            <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
+                                Don’t worry if you feel like you don’t have the necessary expertise, the problems are supposed to be solved with existing technology and you’ll have numerous research tools available to you!
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-span-1 lg:py-24 lg:px-32">
-                    <div class="row-span-1 ">
-                        <img src="./images/EBEC_CS.png" alt="Case Study Logo">
-                    </div>
-                    <div class="row-span-1 pt-10">
-                        <p class="font-medium text-lg text-justify pt-5">
-                            Enjoy finding theoretical solutions to real life engineering problems? The <span class="font-bold brightness-125">CASE STUDY</span> category is made for <span class="font-bold brightness-125">YOU</span>!
-                        </p>
-                        <p class="font-medium text-lg text-justify pt-5">
-                            In 24 hours, the teams have to come up with a possible strategy to solve the technological problem proposed by our sponsors. 
-                            Don’t worry if you feel like you don’t have the necessary expertise, the problems are supposed to be solved with existing technology and you’ll have numerous research tools available to you! 
-
-                        </p>
-                    </div>
-
+                <div class="lg:order-1 items-center flex lg:col-span-1 mx-auto lg:my-auto">
+                    <img src="./images/photos/case_study_photo" alt="Last year's Case Study photo" class="max-h-32 p-6 mx-auto" /> 
                 </div>
             </div>
-            <section id="sponsorsCS" class="mx-96">
-                <div
-                    class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
-                    <img class="w-40" src="./images/logos/ist.png" alt="ist" />
-                    <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
-                    <img class="w-44" src="./images/logos/santander.png" alt="santander" />
-                    <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
-                </div>
-            </section>
-        </section>
-        
-        
-
-        <section id="Innovative Design" class="flex-col items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
-            <div id="ID Wrapper" class="grid lg:grid-cols-2 grid-cols-1 mx-72 bg-black/75 rounded-3xl">
-                <div class="col-span-1 lg:py-24 lg:px-32">
-                    <div class="row-span-1 grid-rows-2">
-                        <img src="./images/EBEC_ID.png" alt="Innovative Design Logo">
-                    </div>
-                    <div class="row-span-1 mt-10">
-                        <p class="font-medium text-lg text-justify mt-5">
-                            Feel like taking a more practical approach to solving our challenges? Try our <span class="font-bold brightness-125">Innovative Design</span> category!
-                        </p>
-                        <p class="font-medium text-lg text-justify mt-5">
-                            You’ll have to use your creativity and knowledge to come up with new technologies or improve existing ones in only 24 hours. 
-                            All the teams will have to prepare a presentation to the jury that must demonstrate the technical, social, environmental, and economic impact of their idea.                                    
-                        </p>
-                    </div>
-                </div>
-                <div class="col-span-1 mx-auto lg:my-auto">
-                    <img src="./images/photos/innovative_design_photo" alt="Last year's Innovative Design photo" class="max-h-40 my-3" />
-                </div>
-            </div>
-            <section id="sponsorsID" class="mx-96">
-                <div class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
-                    <img class="w-40" src="./images/logos/ist.png" alt="ist" />
-                    <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
-                    <img class="w-44" src="./images/logos/santander.png" alt="santander" />
-                    <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
+            <section id="sponsorsCS" class="rounded-full py-[4vw] bg-gradient-radial from-slate-500/95 to-slate-900/90">
+                <div class="grid grid-cols-4 gap-4 items-center px-8">
+                    <img class="max-h-[4vh]" src="./images/logos/ist.png" alt="ist" />
+                    <img class="max-h-[4vh]" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                    <img class="max-h-[4vh]" src="./images/logos/santander.png" alt="santander" />
+                    <img class="max-h-[4vh]" src="./images/logos/fcul.png" alt="fcul" />
                 </div>
             </section>
         </section>
 
-        
-
+        <section id="Innovative Design" class="flex-col w-full min-h-screen items-center md:p-[4vw] md:pb-0 p-[4vw] pb-0">
+            <div id="ID Wrapper" class="grid-flow-dense lg:grid-cols-2 py-[5vh] px-[2vh] bg-black/75 rounded-3xl">
+                <div class="lg:col-span-1 lg:py-24 lg:px-32">
+                    <div class="row-span-1 flex-auto items-center">
+                        <img src="./images/EBEC_ID.png" alt="Innovative Design Logo" class="h-[4vh] mx-auto">
+                    </div>
+                    <div class="row-span-1">
+                        <div class="grid-flow-dense grid-rows-3 text-sm">
+                            <div class="font-medium row-span-1 text-center lg:text-justify pt-[8vh] px-[4vw]">
+                                Feel like taking a more practical approach to solving our challenges? Try our <span class="font-bold brightness-125">Innovative Design</span> category!
+                            </div>
+                            <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
+                                You’ll have to use your creativity and knowledge to come up with new technologies or improve existing ones in only 24 hours. 
+                            </div>
+                            <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
+                                All the teams will have to prepare a presentation to the jury that must demonstrate the technical, social, environmental, and economic impact of their idea.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:order-1 items-center flex lg:col-span-1 mx-auto lg:my-auto">
+                    <img src="./images/photos/innovative_design_photo" alt="Last year's Innovative Design photo" class="max-h-32 p-6 mx-auto" />
+                </div>
+            </div>
+            <section id="sponsorsID" class="bg-gradient-radial from-slate-500/95 to-slate-900/90 rounded-full py-[4vw]">
+                <div class="grid grid-cols-4 gap-4 items-center px-8">
+                    <img class="max-h-[4vh]" src="./images/logos/ist.png" alt="ist" />
+                    <img class="max-h-[4vh]" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                    <img class="max-h-[4vh]" src="./images/logos/santander.png" alt="santander" />
+                    <img class="max-h-[4vh]" src="./images/logos/fcul.png" alt="fcul" />
+                </div>
+            </section>
         </section>
-        <!-- FAQ Section -->
-        <section id="FAQ" class="min-h-screen mx-auto lg:mb-48 lg:pt-32">
-            <div id="FAQ Wrapper" class="grid grid-cols-2 mx-72 py-16 px-16 bg-black/75 rounded-3xl">
-                <div class="col-span-2 gap-8 pb-16 mx-auto lg:my-auto text-center text-bold brightness-200 ">
+<!-- 
+        <!-- FAQ Section 
+        <section id="FAQ" class="flex-col items-center w-full min-h-screen mx-auto lg:mb-48 lg:pt-24 px-12 py-12">
+            <div id="FAQ Wrapper" class=" flex-col lg:grid lg:grid-cols-2 mx-72 py-16 px-16 bg-black/75 rounded-3xl">
+                <div class="lg:col-span-2 gap-8 pb-16 mx-auto lg:my-auto text-center text-bold brightness-200 ">
                     <p class="lg:mb-3 my-3 text-3xl font-bold mx-10">
                         FAQtastic Questions
                     </p>
                 </div>
-                <div class="col-span-1 mx-auto">
+                <div class="lg:col-span-1 mx-auto">
                     <div id="accordion-flush" class="py-16" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                         <h2 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                        <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
                             <span>When is the event?</span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
@@ -195,7 +194,7 @@
                         </div>
                         </div>
                         <h2 id="accordion-flush-heading-2">
-                            <button type="button" class="flex items-center justify-between w-full rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                             <span>Where is the event?</span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -210,7 +209,7 @@
                         </div>
                     
                         <h2 id="accordion-flush-heading-3">
-                            <button type="button" class="flex items-center justify-between w-full rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                             <span>Who can participate? </span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -224,10 +223,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1">
+                <div class="lg:col-span-1">
                     <div id="accordion-flush" class="py-16" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                         <h2 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                        <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
                             <span>When is the event?</span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
@@ -240,7 +239,7 @@
                         </div>
                         </div>
                         <h2 id="accordion-flush-heading-2">
-                            <button type="button" class="flex items-center justify-between w-full rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                             <span>Where is the event?</span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -255,7 +254,7 @@
                         </div>
                     
                         <h2 id="accordion-flush-heading-3">
-                            <button type="button" class="flex items-center justify-between w-full rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                             <span>Who can participate? </span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -271,57 +270,47 @@
                 </div>
             </div>
         </section>
-       <!-- <section id="Team" class="flex items-center min-h-screen mx-auto lg:mb-48 lg:pt-32">
-            <div id="Team Wrapper" class="mx-72 bg-black/75 rounded-3xl">
-                    <div class="flex-row mx-auto py-4 gap-8 items-center content-evenly justify-items-center">
-                        <img class="w-40" src="./images/logos/ist.png" alt="ist" />
-                        <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
-                        <img class="w-44" src="./images/logos/santander.png" alt="santander" />
-                        <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
-                    </div>
-            </div> 
-        </section>
         -->
-        </section>
-            <footer class="w-full pb-4 z-10">
-                <div class="bg-black rounded-3xl text-center lg:text-left lg:mx-32">
-                    <div class="container px-20 text-gray-300 mx-auto p-6 ">
-                        <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
-                            <div class="my-6 md:mb-0">
-                                <div class="text-center md:text-left">
-                                    <h3 class="text-xl font-semibold my-4">
-                                        Contact us
-                                    </h3>
-                                    <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
-                                            fill="currentColor">
-                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                        </svg>
-                                        <p>lisbon@best-eu.org</p>
-                                    </a>
-                                    <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                            fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                        <p>
-                                            Avenida Rovisco Pais
-                                        </p>
-                                    </a>
-                                </div>
+        <footer class="w-full z-10">
+            <div class="bg-black rounded-3xl text-center lg:text-left lg:mx-32">
+                <div class="container px-20 text-gray-300 mx-auto p-6 ">
+                    <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+                        <div class="my-6 md:mb-0">
+                            <div class="text-center md:text-left">
+                                <h3 class="text-xl font-semibold my-4">
+                                    Contact us
+                                </h3>
+                                <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
+                                    <p>lisbon@best-eu.org</p>
+                                </a>
+                                <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <p>
+                                        Avenida Rovisco Pais
+                                    </p>
+                                </a>
                             </div>
                         </div>
-                        <div class="mx-auto text-gray-300">
-                            <p class="text-center">© 2023 BEST Lisboa. All rights reserved.</p>
-                        </div>
+                    </div>
+                    <div class="mx-auto text-gray-300">
+                        <p class="text-center">© 2023 BEST Lisboa. All rights reserved.</p>
                     </div>
                 </div>
-            </footer> 
+            </div>
+        </footer> 
+        
     </main>
-    
+
     <!-- Scripts -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
