@@ -21,7 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
     <title>EBEC Challenge</title>
 </head>
-<body id="body" class="bg-white text-white dark">
+<body id="body" class="bg-black text-white dark">
     <!-- Navigation Bar and Side Bar -->
     <canvas class="fixed w-full opacity-30 -z-1"></canvas>
     <nav class="fixed w-full p-2 z-20">
@@ -72,8 +72,8 @@
                         to compete in the Iberian round in Madrid (everything paid by us!)   
                     </div>
                     <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh] px-[4vw]">
-                        Click <a href="" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> to participate! <p></p>
-                        And <a href="" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> for answers to your FAQtastic questions!
+                        Click <a href="#ClickiesWrapperInsc" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> to participate, and don't forget to check our <a href="#ClickiesWrapperGuia" class="text-green-700 hover:brightness-200 font-bold brightness-150">GUIDE</a> and <a href="#ClickiesWrapperReg" class="text-green-700 hover:brightness-200 font-bold brightness-150">REGULATIONS</a> <p></p>
+                        And click <a href="#FAQ" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> for answers to all your FAQtastic questions!
                     </div>                
                 </div>
             </div>
@@ -244,19 +244,19 @@
         </section>
 
         <section id="Clickies" class="flex-col w-full min-h-screen items-center md:p-[4vw] md:pb-0 p-[4vw] pb-0">
-            <div id="Clickies Wrapper insc" class="flex-col text-center font-bold brightness-125 py-[2vh] px-[2vh] my-[3vh] bg-black/75 rounded-3xl">
+            <div id="ClickiesWrapperInsc" class="flex-col text-center font-bold brightness-125 py-[2vh] px-[2vh] my-[3vh] bg-black/75 rounded-3xl">
                     <div>
                         Participation form
                     </div>
                     <img src="./images/PDF_item.png" class="max-w-[40vw] mx-auto my-2 p-[3vw]" />
             </div>
-            <div id="Clickies Wrapper guia" class="flex-col text-center font-bold brightness-125 py-[2vh] px-[2vh] my-[3vh] bg-black/75 rounded-3xl">
+            <div id="ClickiesWrapperGuia" class="flex-col text-center font-bold brightness-125 py-[2vh] px-[2vh] my-[3vh] bg-black/75 rounded-3xl">
                 <div>
                     Event Guide
                 </div>
                 <img src="./images/PDF_item.png" class="max-w-[40vw] mx-auto my-2 p-[3vw]" />
             </div>
-            <div id="Clickies Wrapper reg" class="flex-col text-center font-bold brightness-125 py-[2vh] px-[2vh] my-[3vh] bg-black/75 rounded-3xl">
+            <div id="ClickiesWrapperReg" class="flex-col text-center font-bold brightness-125 py-[2vh] px-[2vh] my-[3vh] bg-black/75 rounded-3xl">
                 <div>
                     Regulation
                 </div>
@@ -269,36 +269,38 @@
 
         <!-- FAQ Section -->
         <section id="FAQ" class="flex-col w-full min-h-screen items-center md:p-[4vw] md:pb-0 p-[4vw] pb-0">
-            <div id="FAQ Wrapper" class=" flex-col lg:grid lg:grid-cols-2 mx-72 py-16 px-16 bg-black/75 rounded-3xl">
-                <div class="lg:col-span-2 gap-8 pb-16 mx-auto lg:my-auto text-center text-bold brightness-200 ">
-                    <p class="lg:mb-3 my-3 text-3xl font-bold mx-10">
-                        FAQtastic Questions
+            <div id="FAQ Wrapper" class="grid grid-cols-2 text-center brightness-125 py-[2vh] px-[1vw] my-[3vh] bg-black/75 rounded-3xl">
+                <div class="col-span-2 gap-8 pb-4 mx-auto lg:my-auto text-center">
+                    <p class="lg:mb-3 my-3 text-3xl mx-auto max-w-[60vw]">
+                        <span class="text-green-700 hover:brightness-150 font-bold brightness-125">FAQ</span>tastic Questions
                     </p>
                 </div>
-                <div class="lg:col-span-1 mx-auto">
-                    <div id="accordion-flush" class="py-16" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                <div class="lg:col-span-1 col-span-2 mx-auto max-w-[80vw]">
+                    <div id="accordion-flush" class="my-4" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        
                         <h2 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
-                            <span>When is the event?</span>
+                        <button type="button" class="flex items-center justify-between rounded-xl mx-auto max-w-[80vw] font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                            When is the event?
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
                         </h2>
                         <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                        <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
-                            <p class="font-medium text-base text-left text-gray-200">
-                                This year’s edition will happen on the 20th and 21st of March.
-                            </p>
+                            <div class="py-5 font-light rounded-xl mx-auto max-w-[80vw] border-b border-gray-200 dark:border-gray-700">
+                                <p class="font-medium text-base text-center text-gray-200">
+                                    This year’s edition will happen between the 24th and 27st of March.
+                                </p>
+                            </div>
                         </div>
-                        </div>
+
                         <h2 id="accordion-flush-heading-2">
-                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <button type="button" class="flex items-center justify-between rounded-xl mx-auto max-w-[80vw] font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                             <span>Where is the event?</span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
                         </h2>
                         <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                            <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
-                            <p class="font-medium text-base text-left text-gray-200">
+                            <div class="py-5 font-light rounded-xl mx-auto max-w-[80vw] border-b border-gray-200 dark:border-gray-700">
+                            <p class="font-medium text-base text-center text-gray-200">
                                 This year's edition will take place in Instituto Superior Técnico, 
                             Alameda Campus, Civil Building! 
                             </p>
@@ -306,62 +308,17 @@
                         </div>
                     
                         <h2 id="accordion-flush-heading-3">
-                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <button type="button" class="flex items-center justify-between rounded-xl mx-auto max-w-[80vw] font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                             <span>Who can participate? </span>
                             <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
                         </h2>
                         <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                        <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
-                            <p class="font-medium text-base text-left text-gray-200">
-                                Every student of Tecnico and FCUL is welcome to attend!
-                            </p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:col-span-1">
-                    <div id="accordion-flush" class="py-16" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                        <h2 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
-                            <span>When is the event?</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                        </h2>
-                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                        <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
-                            <p class="font-medium text-base text-left text-gray-200">
-                                This year’s edition will happen on the 20th and 21st of March.
-                            </p>
-                        </div>
-                        </div>
-                        <h2 id="accordion-flush-heading-2">
-                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                            <span>Where is the event?</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
                             <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
-                            <p class="font-medium text-base text-left text-gray-200">
-                                This year's edition will take place in Instituto Superior Técnico, 
-                            Alameda Campus, Civil Building! 
-                            </p>
+                                <p class="font-medium text-base center text-gray-200">
+                                    Every student of Tecnico and FCUL is welcome to attend!
+                                </p>
                             </div>
-                        </div>
-                    
-                        <h2 id="accordion-flush-heading-3">
-                            <button type="button" class="flex items-center justify-between rounded-xl px-8 py-5 font-medium text-left text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-                            <span>Who can participate? </span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                        <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
-                            <p class="font-medium text-base text-left text-gray-200">
-                                Every student of Tecnico and FCUL is welcome to attend!
-                            </p>
-                        </div>
                         </div>
                     </div>
                 </div>
