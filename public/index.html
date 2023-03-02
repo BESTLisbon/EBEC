@@ -45,8 +45,8 @@
             <!-- why mt-x and not pt-x on the Wrapper? margin will mess outer container-->
             <div id="Banner Wrapper" class="mx-auto lg:max-w-[25vw] md:max-w-[40vw] max-w-[50vw] my-[25vh]">
                 <a href="#EBEC" class="p-8"><img src="./images/EBEC_Logo_Principal.png" alt="EBEC beautiful logo by Kika" class="" /></a>
-                <div class="rounded-full border-solid border-2 bg-blue-600/20 border-slate-700 lg:mt-[4vh]">
-                    <a href="" target="_blank"><h3 class="flex justify-center font-black brightness-150 mx-auto py-8">Take the blue pill</h3></a>
+                <div class="rounded-full border-solid border-2 border-slate-700 lg:mt-[4vh] text-sm">
+                    <a href="https://forms.gle/kXnDCsoBbrPSvYGV9" target="_blank"><h3 class="flex justify-center font-black brightness-150 lg:py-8 py-[1vh]">Take the pill</h3></a>
                 </div>
             </div>
         </section>
@@ -57,14 +57,14 @@
                 <div class="flex-auto items-center">
                     <img src="./images/EBEC_Logo.svg" alt="EBEC challenge" class="md:w-[25vw] w-[35vw] mx-auto"/>
                 </div>
-                <div class="grid-flow-dense grid-rows-4 lg:teaxt-2xl md:text-xl text-sm md:px-[10vw] px-[4vw]">
-                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[8vh] ">
+                <div class="flex-col text-center md:text-justify lg:text-lg md:text-base text-sm md:px-[10vw] px-[4vw]">
+                    <div class="font-medium text-center row-span-1 pt-[8vh] ">
                         
                         EBEC (European BEST Engineering Competition) Challenge is one of 
                         the biggest engineering competitions in Europe organized by BEST Lisbon.
                         
                     </div>
-                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh]">
+                    <div class="font-medium row-span-1 pt-[4vh]">
                         In 24 hours, the teams have to solve a challenge proposed from one of 2 categories: 
                         the 
                         <a href="#Case Study" class="text-green-700 hover:brightness-200 font-bold brightness-150">Case Study</a> 
@@ -73,10 +73,10 @@
                         The winning team of each category will get a cash prize and the opportunity 
                         to compete in the Iberian round in Madrid (everything paid by us!)   
                     </div>
-                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh]">
-                        Participating is very easy, just fill in <a href="#ClickiesWrapperInsc" class="text-green-700 hover:brightness-200 font-bold brightness-150">THIS FORM</a> and we'll see you there!
+                    <div class="font-medium text-center row-span-1 pt-[4vh]">
+                        Participating is very easy, just fill in <a href="#ClickiesWrapperInsc" class="text-green-700 hover:brightness-200 font-bold brightness-150">THIS FORM</a> or scroll up to take the pill, and we'll see you there!
                     </div>
-                    <div class="font-medium row-span-1 text-center lg:text-justify pt-[4vh]">
+                    <div class="font-medium text-center row-span-1 pt-[4vh]">
                         Click <a href="#ClickiesWrapperInsc" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> to participate, and don't forget to check our <a href="#ClickiesWrapperGuia" class="text-green-700 hover:brightness-200 font-bold brightness-150">GUIDE</a> and <a href="#ClickiesWrapperReg" class="text-green-700 hover:brightness-200 font-bold brightness-150">REGULATIONS</a> <p></p>
                         And click <a href="#FAQ" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> for answers to all your FAQtastic questions!
                     </div>                
@@ -87,7 +87,28 @@
 
                 </iframe>
             </section>
-            <section id="social-media" class="rounded-full bg-black/5 border-solid border-2 border-slate-700">
+            <section id="event sponsors" class="rounded-full py-[2vh] lg:mt-[5vh] bg-black/5">
+                <div class="grid grid-cols-5 gap-1 items-center md:h-[22vh] h-[14vh] px-[4vw]">
+                    <div class="col-span-1">
+                        <h2 class="text-green-500 lg:text-2xl md:text-xl text-xs font-semibold text-center">
+                            EBEC 
+                            Sponsors:
+                        </h2>
+                    </div>
+                    <div class="grid col-span-4 grid-cols-2 items-center gap-1 h-full">
+                        <div class="flex bg-transparent rounded-full md:p-[1vh] p-[1vw] md:max-h-[10vh] max-h-[6vh] items-center justify-center">
+                            <img class="object-contain lg:p-20 md:p-8 p-4" src="./images/logos/ist.png" alt="ist"/>
+                        </div>
+                        <div class="flex bg-transparent rounded-full md:p-[1vh] p-[1vw] md:max-h-[10vh] max-h-[6vh] items-center justify-center">
+                            <img class="object-contain lg:p-8 p-0 rounded-full" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                        </div>
+                        <div class="flex col-span-2 md:mx-[10vw] mx-[15vw] bg-transparent rounded-full md:p-[1vh] p-[1vw] md:max-h-[10vh] max-h-[6vh] items-center justify-center">
+                            <img class="lg:p-20 md:p-8 p-4" src="./images/logos/fcul.png" alt="fcul" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="social-media" class="rounded-full md:my-[5vh] bg-black/5 border-solid border-2 border-slate-700">
                 <div class="grid grid-cols-2 items-center p-2 pr-0">
                     <div class="md:ml-[4vw] p-2">
                         <h2 class="text-green-500 lg:text-2xl md:text-xl text-xs font-semibold">
@@ -117,22 +138,22 @@
         </section>
 
         <section id="Case Study" class="flex-col w-full min-h-screen items-center md:px-[20vw] md:p-[2vw] md:pb-0 p-[4vw] pb-0">
-            <div id="CS Wrapper" class="grid md:grid-cols-2 pt-[5vh] md:py-[5vh] md:px-[4vw] px-[2vh] bg-black/50 rounded-3xl">
+            <div id="CS Wrapper" class="grid md:text-justify text-center lg:text-lg md:text-base text-sm md:grid-cols-2 pt-[5vh] md:py-[5vh] md:px-[4vw] px-[2vh] bg-black/50 rounded-3xl">
                 <div class="md:col-span-2 flex-auto items-center">
                     <div class="row-span-1 flex-auto items-center">
                         <img src="./images/EBEC_CS.png" alt="Case Study Logo" class="md:h-[10vh] h-[4vh] mx-auto md:p-[2vh] mb-4">
                     </div>
                 </div>
-                <div class="md:col-span-2 md:order-1 font-medium row-span-1 md:text-justify text-center lg:text-2xl md:text-xl text-sm pt-[4vh] px-[2vw]">
+                <div class="md:col-span-2 md:order-1 font-medium row-span-1 pt-[4vh] px-[2vw]">
                     Enjoy finding theoretical solutions to real life engineering problems? The <span class="font-bold brightness-125">CASE STUDY</span> category is made for <span class="font-bold brightness-125">YOU</span>!
                 </div>
-                <div class="md:col-span-1 md:order-2 order-last items-center md:mx-[0vw] mx-auto p-[4vh]">
+                <div class="md:col-span-1 md:order-2 order-last items-center md:mx-[0vw] mx-auto p-[6vh]">
                     <img src="./images/CS.jpg" alt="Last year's Case Study photo" class="lg:w-[15vw] w-[75vw] mx-auto rounded-2xl" /> 
                 </div>
-                <div class="flex md:col-span-1 md:order-3 font-medium row-span-1 items-center text-center md:text-justify lg:text-2xl md:text-xl text-sm p-[4vh] px-[2vw]">
+                <div class="flex md:col-span-1 md:order-3 font-medium row-span-1 items-center p-[4vh] px-[2vw]">
                     In 24 hours, the teams have to come up with a possible strategy to solve the technological problem proposed by our sponsors. 
                 </div>
-                <div class="md:col-span-2 md:order-4 font-medium row-span-1 md:text-justify text-center lg:text-2xl md:text-xl text-sm md:pt-0 pt-[4vh] px-[2vw]">
+                <div class="md:col-span-2 md:order-4 font-medium row-span-1 md:text-justify md:pt-0 pt-[4vh] px-[2vw]">
                     Don’t worry if you feel like you don’t have the necessary expertise, the problems are supposed to be solved with existing technology and you’ll have numerous research tools available to you!
                 </div>
             </div>
@@ -140,7 +161,8 @@
                 <div class="grid grid-cols-5 gap-1 items-center md:h-[22vh] h-[14vh] px-[4vw]">
                     <div class="col-span-1">
                         <h2 class="text-green-500 lg:text-2xl md:text-xl text-xs font-semibold text-center">
-                            Sponsors:
+                            Main
+                            Sponsor:
                         </h2>
                     </div>
                     <div class="grid col-span-4 grid-cols-2 items-center gap-1 h-full">
@@ -166,15 +188,15 @@
                 <div class="grid grid-rows-3 items-center justify-items-center md:gap-3 gap-1">
                     <div class="flex-col rounded-xl md:w-[30vw] w-[80vw] p-[1vh] items-center text-xs text-center border-solid border-2 border-slate-700">
                         <div class="lg:text-2xl md:text-xl text-sm">Manuel Guedes</div>
-                        <div>Professor no IST</div>
+                        <div class="lg:text-lg md:text-base text-sm">Professor no IST</div>
                     </div>
                     <div class="flex-col rounded-xl md:w-[30vw] w-[80vw] p-[1vh] items-center text-xs text-center border-solid border-2 border-slate-700">
                         <div class="lg:text-2xl md:text-xl text-sm">Rodrigo Proença de Oliveira</div>
-                            <div>Professor no IST</div>
+                        <div class="lg:text-lg md:text-base text-sm">Professor no IST</div>
                     </div>
                     <div class="flex-col rounded-xl md:w-[30vw] w-[80vw] p-[1vh] items-center text-xs text-center border-solid border-2 border-slate-700">
                         <div class="lg:text-2xl md:text-xl text-sm">Helena Margarida Machado da Silva Ramos</div>
-                            <div>Professora no IST</div>
+                        <div class="lg:text-lg md:text-base text-sm">Professora no IST</div>
                     </div>
                 </div>
             </section>
@@ -185,21 +207,21 @@
         </section>
 
         <section id="Innovative Design" class="flex-col w-full min-h-screen items-center md:px-[20vw] md:p-[2vw] md:pb-0 p-[4vw] pb-0">
-            <div id="ID Wrapper" class="grid md:grid-cols-2 py-[5vh] md:px-[4vw] px-[2vh] bg-black/50 rounded-3xl">
+            <div id="ID Wrapper" class="grid md:grid-cols-2 lg:text-lg md:text-base py-[5vh] md:px-[4vw] px-[2vh] bg-black/50 rounded-3xl">
                 <div class="md:col-span-2 flex-auto items-center">
                     <img src="./images/EBEC_ID.png" alt="Innovative Design Logo" class="md:h-[10vh] h-[4vh] mx-auto md:p-[2vh] mb-4">
                 </div>
 
-                <div class="md:col-span-2 md:order-1 font-medium row-span-1 md:text-justify text-center lg:text-2xl md:text-xl text-sm pt-[4vh] px-[2vw]">
+                <div class="md:col-span-2 md:order-1 font-medium row-span-1 md:text-justify text-center pt-[4vh] px-[2vw]">
                     Feel like taking a more practical approach to solving our challenges? Try our <span class="font-bold brightness-125">Innovative Design</span> category!
                 </div>
-                <div class="flex md:col-span-1 md:order-2 font-medium row-span-1 items-center text-center md:text-justify lg:text-2xl md:text-xl text-sm p-[4vh] px-[2vw]">
+                <div class="flex md:col-span-1 md:order-2 font-medium row-span-1 items-center text-center md:text-justify p-[4vh] px-[2vw]">
                     You’ll have to use your creativity and knowledge to come up with new technologies or improve existing ones in only 24 hours. 
                 </div>
                 <div class="md:col-span-1 md:order-3 order-last items-center md:mx-[0vw] mx-auto p-[4vh]">
-                    <img src="./images/ID.jpg" alt="Last year's Innovative Design photo" class="object-contain w-[75vw] mx-auto rounded-2xl" />
+                    <img src="./images/ID.jpg" alt="Last year's Innovative Design photo" class="object-contain lg:w-[15vw] w-[75vw] mx-auto rounded-2xl" />
                 </div>
-                <div class="md:col-span-2 md:order-4 font-medium row-span-1 md:text-justify text-center lg:text-2xl md:text-xl text-sm md:pt-0 pt-[4vh] px-[2vw]">
+                <div class="md:col-span-2 md:order-4 font-medium row-span-1 md:text-justify text-center md:pt-0 pt-[4vh] px-[2vw]">
                     All the teams will have to prepare a presentation to the jury that must demonstrate the technical, social, environmental, and economic impact of their idea.
                 </div>
             </div>
@@ -207,7 +229,8 @@
                 <div class="grid grid-cols-5 gap-1 items-center md:h-[22vh] h-[14vh] px-[4vw]">
                     <div class="col-span-1">
                         <h2 class="text-green-500 lg:text-2xl md:text-xl text-xs font-semibold text-center">
-                            Sponsors:
+                            Main
+                            Sponsor:
                         </h2>
                     </div>
                     <div class="grid col-span-4 grid-cols-2 items-center gap-1 h-full">
@@ -233,15 +256,15 @@
                 <div class="grid grid-rows-3 items-center justify-items-center md:gap-3">
                     <div class="flex-col rounded-xl md:w-[30vw] w-[80vw] p-[1vh] items-center text-xs text-center border-solid border-2 border-slate-700">
                         <div class="lg:text-2xl md:text-xl text-sm">Marco Leite</div>
-                        <div>Professor no IST</div>
+                        <div class="lg:text-lg md:text-base text-sm">Professor no IST</div>
                     </div>
                     <div class="flex-col rounded-xl md:w-[30vw] w-[80vw] p-[1vh] items-center text-xs text-center border-solid border-2 border-slate-700">
                         <div class="lg:text-2xl md:text-xl text-sm">Miguel Amaral</div>
-                            <div>Professor no IST</div>
+                        <div class="lg:text-lg md:text-base text-sm">Professor no IST</div>
                     </div>
                     <div class="flex-col rounded-xl md:w-[30vw] w-[80vw] p-[1vh] items-center text-xs text-center border-solid border-2 border-slate-700">
-                        <div class="lg:text-2xl md:text-xl text-sm">António Campos</div>
-                            <div>Professor no IST</div>
+                        <div class="lg:text-lg md:text-base text-sm">António Campos</div>
+                        <div class="lg:text-lg md:text-base text-sm">Professor no IST</div>
                     </div>
                 </div>
             </section>
@@ -251,26 +274,20 @@
             <img src="./images/reta.png" class="max-w-[60vw] mx-auto my-2 p-[3vw]" />
         </section>
 
-        <section id="Clickies" class="flex-col w-full min-h-screen items-center md:px-[20vw] md:p-[2vw] md:pb-0 p-[4vw] pb-0">
-            <div id="ClickiesWrapperInsc" class="flex-col text-center lg:text-3xl md:text-2xl font-bold brightness-105 py-[2vh] px-[2vh] my-[3vh] bg-black/50 rounded-3xl">
-                    <div>
-                        Participation form
-                    </div>
-                    <img src="./images/PDF_item.png" class="md:max-w-[15vw] max-w-[40vw] mx-auto my-2 p-[3vw]" />
-            </div>
+        <section id="Clickies" class="grid grid-cols-2 w-full min-h-screen items-center md:px-[20vw] md:p-[2vw] md:pb-0 p-[4vw] pb-0">
             <div id="ClickiesWrapperGuia" class="flex-col text-center lg:text-3xl md:text-2xl font-bold brightness-105 py-[2vh] px-[2vh] my-[3vh] bg-black/50 rounded-3xl">
                 <div>
                     Event Guide
                 </div>
-                <img src="./images/PDF_item.png" class="md:max-w-[15vw] max-w-[40vw] mx-auto my-2 p-[3vw]" />
+                <a href="./docs/Survival Guide ebec challenge 2023.pdf" download="Survival_Guide_EBEC_Challenge_2023.pdf"><img src="./images/PDF_item.png" class="md:max-w-[15vw] max-w-[35vw] mx-auto my-2 p-[3vw]" /></a>
             </div>
             <div id="ClickiesWrapperReg" class="flex-col text-center lg:text-3xl md:text-2xl font-bold brightness-105 py-[2vh] px-[2vh] my-[3vh] bg-black/50 rounded-3xl">
                 <div>
                     Regulation
                 </div>
-                <img src="./images/PDF_item.png" class="md:max-w-[15vw] max-w-[40vw] mx-auto my-2 p-[3vw]" />
+                <a href="./docs/Regulamento EBEC CHALLENGE.pdf" download="Regulation_EBEC_Challenge_2023.pdf"><img src="./images/PDF_item.png" class="md:max-w-[15vw] max-w-[35vw] mx-auto my-2 p-[3vw]" /></a>
             </div>
-            <div id="CT Wrapper" class="grid-flow-dense py-[2vh] items-center justify-center my-auto bg-black/50 rounded-3xl">
+            <div id="CT Wrapper" class="grid-flow-dense col-span-2 py-[2vh] items-center justify-center my-auto bg-black/50 rounded-3xl">
                 <div class="text-center font-bold lg:text-3xl md:text-2xl brightness-105 my-[2vh]">
                         
                     Meet the Core Team
