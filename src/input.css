@@ -3,12 +3,8 @@
 @tailwind utilities;
 /*
 @layer base{
-  @font-face {
-      font-family: 'matrixzone';
-      font-weight: 400;
-      src: url("../public/fonts/Matrix Zone.ttf") format('truetype');
-  }
-  
+
+
   @font-face {
     font-family: 'matrixzone';
     font-weight: 400;
