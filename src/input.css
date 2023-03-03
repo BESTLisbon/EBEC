@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*
 @layer base{
   @font-face {
       font-family: 'matrixzone';
@@ -14,4 +14,4 @@
     font-weight: 400;
     src: url("../public/fonts/Matrix Zone.woff") format('woff');
   }
-}
+}*/
