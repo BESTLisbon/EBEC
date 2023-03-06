@@ -3,7 +3,7 @@ module.exports = {
     
     theme: {
       fontFamily: {
-        'gajraj': ['"Gajraj One"', 'cursive']
+        'genos': ['"Genos"', 'cursive']
       },
       
       extend: {
