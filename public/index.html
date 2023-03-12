@@ -85,9 +85,14 @@
                 </div>
             </div>
             <section id="Promotional_Video" class="hidden grid-flow-dense py-[1vh] bg-black/75 rounded-3xl aspect-video p-[2vw]">
-                <iframe src="https://www.youtube-nocookie.com/embed/qDZS1KO1SgA" allow="encrypted-media" class="w-full aspect-video p-[2vw]">
+                <video controls controlslist="nodownload" preload="metadata">
+                    <source src="./video/Promotional_webm_shush.webm" type="video/webm">
+                    
+                </video>
+                
+                <!-- YOUTUBE INTEGRATION <iframe src="https://www.youtube-nocookie.com/embed/[--IDHERE--]" allow="encrypted-media" class="w-full aspect-video p-[2vw]">
 
-                </iframe>
+                </iframe> -->
             </section>
             <section id="event_sponsors" class="rounded-full py-[2vh] lg:mt-[5vh] bg-black/5">
                 <div class="grid grid-cols-5 gap-1 items-center md:h-[22vh] h-[14vh] px-[4vw]">
@@ -279,7 +284,7 @@
         <section id="Clickies" class="flex-col w-full lg:px-[20vw] md:px-[5vw] md:p-[2vw] md:pb-0 p-[4vw] pb-0">
             <div id="ClickiesWrapperGuia" class="flex text-center items-center justify-center lg:text-3xl md:text-3xl font-bold brightness-105 px-[2vh] bg-black/50 rounded-3xl">
                 <a href="./docs/Survival Guide ebec challenge 2023.pdf" download="Survival_Guide_EBEC_Challenge_2023.pdf"><div class="rounded-full px-[8vw] py-[2vh] border-solid border-2 border-slate-700">
-                    Event Guide
+                    Survival Guide
                 </div></a>
             </div>
             <div id="ClickiesWrapperReg" class="flex text-center items-center justify-center lg:text-3xl md:text-3xl font-bold brightness-105 py-[2vh] px-[2vh] my-[3vh] bg-black/50 rounded-3xl">
@@ -358,14 +363,15 @@
 
                     <h2 id="accordion-flush-heading-2" class="lg:mt-[3vh] mt-[1vh]">
                         <button type="button" class="flex items-center justify-between rounded-xl mx-auto max-w-[80vw] pl-[2vw] font-bold text-left lg:text-2xl md:text-xl text-lg text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                        <span>Who can participate?</span>
+                        <span>Where can I get every detail about the challenge?</span>
                         <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
                     </h2>
                     <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
                         <div class="py-5 font-light rounded-xl mx-auto max-w-[80vw] border-b border-gray-200 dark:border-gray-700">
                         <p class="font-medium text-lg text-center text-gray-200">
-                            Every student of Tecnico and FCUL is welcome to attend!
+                            Above this FAQ section you can find the rules and regulations of the event. 
+                            We also have a handy Survival Guide to help you know what to expect!
                         </p>
                         </div>
                     </div>
@@ -485,7 +491,7 @@
                     <div id="accordion-flush-dos-body-5" class="hidden" aria-labelledby="accordion-flush-dos-heading-5">
                         <div class="py-5 font-light rounded-xl px-8 border-b border-gray-200 dark:border-gray-700">
                             <p class="font-medium text-lg center text-gray-200">
-                                Click <a href="#Promotional_Video" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> to be taken to our social network links, or scroll down for contacts.
+                                Click <a href="#event_sponsors" class="text-green-700 hover:brightness-200 font-bold brightness-150">HERE</a> to be taken to our social network links, or scroll down for contacts.
                             </p>
                         </div>
                     </div>
